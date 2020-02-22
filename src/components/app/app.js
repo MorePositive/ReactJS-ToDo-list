@@ -10,8 +10,8 @@ const App = () => {
 
     const todoData = [
       { label: 'Learn React', important: false, id: 1 },
-      { label: 'Drink Coffee', important: false, id: 2 },
-      { label: 'Make Awesome App', important: true, id: 3 }
+      { label: 'Make Awesome App', important: true, id: 2 },
+      { label: 'Drink Coffee', important: false, id: 3 }
     ];
   
     return (
@@ -22,7 +22,9 @@ const App = () => {
           <ItemStatusFilter />
         </div>
   
-        <TodoList todos={todoData} />
+        <TodoList 
+        todos={todoData}
+        onDeleted={(id) => console.log(id)} />
       </div>
     );
   };
