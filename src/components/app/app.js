@@ -27,7 +27,7 @@ export default class App extends React.Component {
       done: false,
       id: this.maxId++
     }
-  }
+  };
 
   deleteItem = (id) => {
     this.setState(({ todoData }) => {
